@@ -1,10 +1,13 @@
 # Bolizard
 
 ## Theme
-### Last and Found
+Last and Found
 
 ## Members
-### Planning : Maxwell, Andy
-### Programming : Mneko, Shuo, NHQ
-### Interface : Remirror
-### Music : Eric, CICI
+Planning : Maxwell, Andy
+
+Programming : Mneko, Shuo, NHQ
+
+Interface : Remirror
+
+Music : Eric, CICI
