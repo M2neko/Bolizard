@@ -41,16 +41,19 @@ public class BoyMove : MonoBehaviour
 			}
 		}
 
-		// ---------------------------------------------------------------------
-		
-		if (rigidBody.velocity.y / 5.0f > 0.01f)
-		{
-            gameObject.GetComponent<Animator>().SetFloat("Velocity", Mathf.Abs(rigidBody.velocity.x / 5.0f));
-		}
-		else
-		{
-			gameObject.GetComponent<Animator>().SetFloat("Velocity", Mathf.Abs(rigidBody.velocity.x / 5.0f));
-		}
+        // ---------------------------------------------------------------------
+
+        gameObject.GetComponent<Animator>().SetFloat("Velocity", Mathf.Abs(rigidBody.velocity.x / 5.0f));
+
+        if (gameObject.GetComponent<Animator>().GetFloat("Velocity") > 0.01f)
+        {
+            if (!gameObject.GetComponent<AudioSource>().isPlaying)
+                gameObject.GetComponent<AudioSource>().Play();
+        }
+        else
+        {
+            gameObject.GetComponent<AudioSource>().Stop();
+        }
 		
 
 	}
