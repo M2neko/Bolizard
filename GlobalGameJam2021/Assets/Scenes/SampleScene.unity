@@ -132,8 +132,11 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
+<<<<<<< HEAD
   - component: {fileID: 519420030}
   - component: {fileID: 519420033}
+=======
+>>>>>>> 77cbd542d1bc050d599589c507e1c22ac34fd6ce
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -149,19 +152,6 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
---- !u!114 &519420030
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4306e80ca75cd4ccd8c0653584c820d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Boy: {fileID: 1615600575}
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -407,7 +397,6 @@ GameObject:
   - component: {fileID: 1615600577}
   - component: {fileID: 1615600576}
   - component: {fileID: 1615600579}
-  - component: {fileID: 1615600580}
   - component: {fileID: 1615600578}
   - component: {fileID: 1615600581}
   m_Layer: 0
@@ -476,7 +465,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1615600575}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.77, y: -2.16, z: 0}
+  m_LocalPosition: {x: -1.64, y: -1.95, z: 0}
   m_LocalScale: {x: 1.1407365, y: 1.1407365, z: 1.1407365}
   m_Children: []
   m_Father: {fileID: 0}
@@ -515,6 +504,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+<<<<<<< HEAD
 --- !u!95 &1615600580
 Animator:
   serializedVersion: 3
@@ -630,3 +620,5 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+=======
+>>>>>>> 77cbd542d1bc050d599589c507e1c22ac34fd6ce
