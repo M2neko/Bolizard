@@ -65,7 +65,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\BlackController.cs" />
+    <Compile Include="Assets\Scripts\Block.cs" />
     <Compile Include="Assets\Scripts\BoyColor.cs" />
+    <Compile Include="Assets\Scripts\BoyInteract.cs" />
     <Compile Include="Assets\Scripts\BoyItemManager.cs" />
     <Compile Include="Assets\Scripts\BoyMove.cs" />
     <Compile Include="Assets\Scripts\CameraMove.cs" />
