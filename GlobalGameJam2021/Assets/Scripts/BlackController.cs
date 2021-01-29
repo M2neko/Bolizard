@@ -9,6 +9,7 @@ public class BlackController : MonoBehaviour
     private float time = 0.0f;
     private float Darktime = 0.0f;
     public bool isDark = false;
+    private int LightCrashes = 0;
     // Start the game?
     public bool startGame = false;
     // Start is called before the first frame update
@@ -20,26 +21,36 @@ public class BlackController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isDark)
+        if (LightCrashes > 2)
         {
-            Darktime += Time.deltaTime;
-            if (Darktime >= Darklast)
-            {
-                isDark = false;
-                time = 0.0f;
-                Darktime = 0.0f;
-            }
+            gameObject.GetComponent<SpriteRenderer>().enabled = true;
+            return;
         }
-        else
+
+        if (LightCrashes <= 2)
         {
-            time += Time.deltaTime;
-            if (time >= Brightlast)
+            if (isDark)
             {
-                // Sound
-                gameObject.GetComponent<AudioSource>().Play();
-                isDark = true;
-                time = 0.0f;
-                Darktime = 0.0f;
+                Darktime += Time.deltaTime;
+                if (Darktime >= Darklast)
+                {
+                    isDark = false;
+                    time = 0.0f;
+                    Darktime = 0.0f;
+                }
+            }
+            else
+            {
+                time += Time.deltaTime;
+                if (time >= Brightlast)
+                {
+                    // Sound
+                    gameObject.GetComponent<AudioSource>().Play();
+                    LightCrashes++;
+                    isDark = true;
+                    time = 0.0f;
+                    Darktime = 0.0f;
+                }
             }
         }
 
