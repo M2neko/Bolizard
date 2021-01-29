@@ -20,7 +20,7 @@ public class BoyMove : MonoBehaviour
 			if (rigidBody != null)
 			{
 				rigidBody.velocity = new Vector2(this.Speed, rigidBody.velocity.y);
-				gameObject.GetComponent<SpriteRenderer>().flipX = false;
+				gameObject.GetComponent<SpriteRenderer>().flipX = true;
 			}
 		}
 
@@ -29,7 +29,7 @@ public class BoyMove : MonoBehaviour
 			if (rigidBody != null)
 			{
 				rigidBody.velocity = new Vector2(-this.Speed, rigidBody.velocity.y);
-				gameObject.GetComponent<SpriteRenderer>().flipX = true;
+				gameObject.GetComponent<SpriteRenderer>().flipX = false;
 			}
 		}
 
@@ -42,16 +42,17 @@ public class BoyMove : MonoBehaviour
 		}
 
 		// ---------------------------------------------------------------------
-		
+		/*
 		if (rigidBody.velocity.y / 5.0f > 0.01f)
 		{
-            gameObject.GetComponent<Animator>().SetFloat("Velocity", Mathf.Abs(rigidBody.velocity.x / 5.0f));
+			gameObject.GetComponent<Animator>().SetFloat("FrontVelocity", Mathf.Abs(rigidBody.velocity.x / 5.0f) + Mathf.Abs(rigidBody.velocity.y / 5.0f));
 		}
 		else
 		{
-			gameObject.GetComponent<Animator>().SetFloat("Velocity", Mathf.Abs(rigidBody.velocity.x / 5.0f));
+			gameObject.GetComponent<Animator>().SetFloat("FrontVelocity", Mathf.Abs(rigidBody.velocity.x / 5.0f));
+			gameObject.GetComponent<Animator>().SetFloat("Velocity", Mathf.Abs(rigidBody.velocity.x / 5.0f) + Mathf.Abs(rigidBody.velocity.y / 5.0f));
 		}
-		
+		*/
 
 	}
 }
