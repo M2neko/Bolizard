@@ -42,6 +42,7 @@ public class BoyMove : MonoBehaviour
 		}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         // ---------------------------------------------------------------------
 
         gameObject.GetComponent<Animator>().SetFloat("Velocity", Mathf.Abs(rigidBody.velocity.x / 5.0f));
@@ -55,6 +56,18 @@ public class BoyMove : MonoBehaviour
         {
             gameObject.GetComponent<AudioSource>().Stop();
         }
+=======
+		// ---------------------------------------------------------------------
+		
+		if (rigidBody.velocity.y / 5.0f > 0.01f)
+		{
+            gameObject.GetComponent<Animator>().SetFloat("Velocity", Mathf.Abs(rigidBody.velocity.x / 5.0f));
+		}
+		else
+		{
+			gameObject.GetComponent<Animator>().SetFloat("Velocity", Mathf.Abs(rigidBody.velocity.x / 5.0f));
+		}
+>>>>>>> parent of bc19a1e... Update Audio
 		
 =======
 		// ---------------------------------------------------------------------
