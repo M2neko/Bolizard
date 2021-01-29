@@ -32,7 +32,20 @@ public class BoyMove : MonoBehaviour
 				gameObject.GetComponent<SpriteRenderer>().flipX = true;
 			}
 		}
-
+		else if (Input.GetAxisRaw("Vertical") > 0.01)
+		{
+			if (rigidBody != null)
+			{
+				rigidBody.velocity = new Vector2(rigidBody.velocity.x, this.Speed);
+			}
+		}
+		else if (Input.GetAxisRaw("Vertical") < -0.01)
+		{
+			if (rigidBody != null)
+			{
+				rigidBody.velocity = new Vector2(rigidBody.velocity.x, -this.Speed);
+			}
+		}
 		else
 		{
 			if (rigidBody != null)
@@ -44,6 +57,7 @@ public class BoyMove : MonoBehaviour
         // ---------------------------------------------------------------------
 
         gameObject.GetComponent<Animator>().SetFloat("Velocity", Mathf.Abs(rigidBody.velocity.x / 5.0f));
+		
 
         if (gameObject.GetComponent<Animator>().GetFloat("Velocity") > 0.01f)
         {
