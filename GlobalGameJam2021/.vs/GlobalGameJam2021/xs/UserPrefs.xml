@@ -1,23 +1,20 @@
 ﻿<Properties StartupConfiguration="{9A20FF7F-C0A0-4EBA-5329-83E16065C5B1}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/BoyColor.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Flashlight.cs">
     <Files>
       <File FileName="Assets/Scripts/BlackController.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/CameraMove.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/CTShadow.cs" Line="9" Column="20" />
-      <File FileName="../../Ruby's Tutorial/Assets/Scripts/DamageZone.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/BoyMove.cs" Line="58" Column="1" />
-      <File FileName="Assets/Scripts/BoyColor.cs" Line="7" Column="1" />
+      <File FileName="../../Ruby's Tutorial/Assets/Scripts/DamageZone.cs" Line="7" Column="24" />
+      <File FileName="Assets/Scripts/BoyMove.cs" Line="55" Column="72" />
+      <File FileName="Assets/Scripts/CameraMove.cs" Line="8" Column="53" />
+      <File FileName="Assets/Scripts/BoyColor.cs" Line="18" Column="29" />
+      <File FileName="Assets/Scripts/CtCamMove.cs" Line="24" Column="52" />
+      <File FileName="Assets/Scripts/SceneShadow.cs" Line="21" Column="26" />
+      <File FileName="Assets/Scripts/BoyItemManager.cs" Line="7" Column="5" />
+      <File FileName="Assets/Scripts/Flashlight.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="GlobalGameJam2021" expanded="True">
-            <Node name="Assets" expanded="True">
-              <Node name="Scripts" expanded="True">
-                <Node name="BoyColor.cs" selected="True" />
-              </Node>
-            </Node>
-          </Node>
+          <Node name="GlobalGameJam2021" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>

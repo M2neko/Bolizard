@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 public class BoyMove : MonoBehaviour
 {
-	private float Speed = 5.0f;
+	public float SpeedX = 5.0f;
+	public float SpeedY = 3.0f;
 
 	private void Start()
 	{
@@ -19,7 +20,7 @@ public class BoyMove : MonoBehaviour
 		{
 			if (rigidBody != null)
 			{
-				rigidBody.velocity = new Vector2(this.Speed, rigidBody.velocity.y);
+				rigidBody.velocity = new Vector2(this.SpeedX, rigidBody.velocity.y);
 				gameObject.GetComponent<SpriteRenderer>().flipX = false;
 			}
 		}
@@ -28,22 +29,8 @@ public class BoyMove : MonoBehaviour
 		{
 			if (rigidBody != null)
 			{
-				rigidBody.velocity = new Vector2(-this.Speed, rigidBody.velocity.y);
+				rigidBody.velocity = new Vector2(-this.SpeedX, rigidBody.velocity.y);
 				gameObject.GetComponent<SpriteRenderer>().flipX = true;
-			}
-		}
-		else if (Input.GetAxisRaw("Vertical") > 0.01)
-		{
-			if (rigidBody != null)
-			{
-				rigidBody.velocity = new Vector2(rigidBody.velocity.x, this.Speed);
-			}
-		}
-		else if (Input.GetAxisRaw("Vertical") < -0.01)
-		{
-			if (rigidBody != null)
-			{
-				rigidBody.velocity = new Vector2(rigidBody.velocity.x, -this.Speed);
 			}
 		}
 		else
@@ -54,12 +41,35 @@ public class BoyMove : MonoBehaviour
 			}
 		}
 
-        // ---------------------------------------------------------------------
+		if (Input.GetAxisRaw("Vertical") > 0.01)
+		{
+			if (rigidBody != null)
+			{
+				rigidBody.velocity = new Vector2(rigidBody.velocity.x, this.SpeedY);
+			}
+		}
+		else if (Input.GetAxisRaw("Vertical") < -0.01)
+		{
+			if (rigidBody != null)
+			{
+				rigidBody.velocity = new Vector2(rigidBody.velocity.x, -this.SpeedY);
+			}
+		}
+		else
+		{
+			if (rigidBody != null)
+			{
+				rigidBody.velocity = new Vector2(rigidBody.velocity.x, 0.0f);
+			}
+		}
 
-        gameObject.GetComponent<Animator>().SetFloat("Velocity", Mathf.Abs(rigidBody.velocity.x / 5.0f));
-		
+		// ---------------------------------------------------------------------
 
-        if (gameObject.GetComponent<Animator>().GetFloat("Velocity") > 0.01f)
+		gameObject.GetComponent<Animator>().SetFloat("Velocity", Mathf.Abs(rigidBody.velocity.x / 5.0f));
+		if(gameObject.GetComponent<Animator>().GetFloat("Velocity") <= 0.01f)
+			gameObject.GetComponent<Animator>().SetFloat("Velocity", Mathf.Abs(rigidBody.velocity.y / 5.0f));
+
+		if (gameObject.GetComponent<Animator>().GetFloat("Velocity") > 0.01f)
         {
             if (!gameObject.GetComponent<AudioSource>().isPlaying)
                 gameObject.GetComponent<AudioSource>().Play();

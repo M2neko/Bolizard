@@ -9,9 +9,8 @@ public class BoyColor : MonoBehaviour
 
     public void setColorDark()
     {
-        Debug.Log("Called");
         var color = new Color(0.5f, 0.5f, 0.5f);
-        oldColor = color;
+        oldColor = gameObject.GetComponent<SpriteRenderer>().color;
         gameObject.GetComponent<SpriteRenderer>().color = color;
     }
 
