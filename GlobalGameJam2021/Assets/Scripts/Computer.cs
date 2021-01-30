@@ -5,6 +5,7 @@ using UnityEngine;
 public class Computer : MonoBehaviour, ItemInterface
 {
     int i = 0;
+    bool completed;
     // Start is called before the first frame update
     void Start()
     {

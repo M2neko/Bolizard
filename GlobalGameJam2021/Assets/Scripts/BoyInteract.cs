@@ -6,7 +6,7 @@ public class BoyInteract : MonoBehaviour
 {
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (Input.GetKey(KeyCode.F))
+        if (Input.GetKeyDown(KeyCode.F))
         {
             string name = collision.name;
             switch (name)
