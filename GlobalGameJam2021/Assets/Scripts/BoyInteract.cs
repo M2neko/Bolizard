@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class BoyInteract : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private void OnTriggerStay2D(Collider2D collision)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (Input.GetKey(KeyCode.F))
+        {
+            string name = collision.name;
+            switch (name)
+            {
+                case "CT Computer":
+                    collision.GetComponent<Computer>().activate();
+                    break;
+                default:
+                    break;
+            }
+        }
     }
 }

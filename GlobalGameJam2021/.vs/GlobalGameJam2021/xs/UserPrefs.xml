@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{9A20FF7F-C0A0-4EBA-5329-83E16065C5B1}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/BoyInteract.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ItemInterface.cs">
     <Files>
       <File FileName="Assets/Scripts/BlackController.cs" Line="1" Column="1" />
       <File FileName="../../Ruby's Tutorial/Assets/Scripts/DamageZone.cs" Line="7" Column="24" />
@@ -11,7 +11,9 @@
       <File FileName="Assets/Scripts/BoyItemManager.cs" Line="13" Column="48" />
       <File FileName="Assets/Scripts/Flashlight.cs" Line="6" Column="2" />
       <File FileName="Assets/Scripts/Block.cs" Line="6" Column="2" />
-      <File FileName="Assets/Scripts/BoyInteract.cs" Line="7" Column="10" />
+      <File FileName="Assets/Scripts/BoyInteract.cs" Line="16" Column="27" />
+      <File FileName="Assets/Scripts/Computer.cs" Line="18" Column="25" />
+      <File FileName="Assets/Scripts/ItemInterface.cs" Line="3" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
