@@ -6,6 +6,8 @@ public class Computer : MonoBehaviour, ItemInterface
 {
     int i = 0;
     bool completed;
+    public GameObject Keypad;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +23,7 @@ public class Computer : MonoBehaviour, ItemInterface
     public bool activate()
     {
         Debug.Log("Computer Activated: " + i++);
+        Keypad.GetComponent<Keypad>().activate();
         return true;
     }
 }

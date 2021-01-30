@@ -64,6 +64,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Keypad\Script\Playsound.cs" />
     <Compile Include="Assets\Scripts\BlackController.cs" />
     <Compile Include="Assets\Scripts\Block.cs" />
     <Compile Include="Assets\Scripts\BoyColor.cs" />
@@ -72,9 +73,11 @@
     <Compile Include="Assets\Scripts\BoyMove.cs" />
     <Compile Include="Assets\Scripts\CameraMove.cs" />
     <Compile Include="Assets\Scripts\Computer.cs" />
+    <Compile Include="Assets\Scripts\ComputerUI.cs" />
     <Compile Include="Assets\Scripts\CtCamMove.cs" />
     <Compile Include="Assets\Scripts\Flashlight.cs" />
     <Compile Include="Assets\Scripts\ItemInterface.cs" />
+    <Compile Include="Assets\Scripts\Keypad.cs" />
     <Compile Include="Assets\Scripts\SceneShadow.cs" />
     <Reference Include="UnityEngine">
       <HintPath>/Applications/Unity/2019.4.18f1c1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>

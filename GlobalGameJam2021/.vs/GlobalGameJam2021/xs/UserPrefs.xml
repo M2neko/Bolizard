@@ -1,19 +1,20 @@
 ﻿<Properties StartupConfiguration="{9A20FF7F-C0A0-4EBA-5329-83E16065C5B1}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ItemInterface.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Keypad.cs">
     <Files>
-      <File FileName="Assets/Scripts/BlackController.cs" Line="1" Column="1" />
       <File FileName="../../Ruby's Tutorial/Assets/Scripts/DamageZone.cs" Line="7" Column="24" />
       <File FileName="Assets/Scripts/BoyMove.cs" Line="55" Column="72" />
       <File FileName="Assets/Scripts/CameraMove.cs" Line="8" Column="53" />
       <File FileName="Assets/Scripts/BoyColor.cs" Line="11" Column="6" />
       <File FileName="Assets/Scripts/CtCamMove.cs" Line="24" Column="52" />
       <File FileName="Assets/Scripts/SceneShadow.cs" Line="8" Column="6" />
-      <File FileName="Assets/Scripts/BoyItemManager.cs" Line="13" Column="48" />
-      <File FileName="Assets/Scripts/Flashlight.cs" Line="6" Column="2" />
+      <File FileName="Assets/Scripts/BoyItemManager.cs" Line="11" Column="37" />
+      <File FileName="Assets/Scripts/Flashlight.cs" Line="15" Column="6" />
       <File FileName="Assets/Scripts/Block.cs" Line="6" Column="2" />
-      <File FileName="Assets/Scripts/BoyInteract.cs" Line="16" Column="27" />
-      <File FileName="Assets/Scripts/Computer.cs" Line="18" Column="25" />
-      <File FileName="Assets/Scripts/ItemInterface.cs" Line="3" Column="1" />
+      <File FileName="Assets/Scripts/BoyInteract.cs" Line="9" Column="29" />
+      <File FileName="Assets/Scripts/Computer.cs" Line="9" Column="22" />
+      <File FileName="Assets/Scripts/ItemInterface.cs" Line="8" Column="1" />
+      <File FileName="Assets/Scripts/ComputerUI.cs" Line="10" Column="12" />
+      <File FileName="Assets/Scripts/Keypad.cs" Line="8" Column="13" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
