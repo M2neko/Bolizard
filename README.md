@@ -6,7 +6,7 @@ Last and Found
 ## Members
 Planning : Maxwell, Andy
 
-Programming : Mneko, Shuo, NHQ
+Programming : Mneko, elf33030, NHQ
 
 Interface : Remirror
 
